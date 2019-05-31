@@ -73,7 +73,7 @@ This command can take 5-15 minutes to complete.
 
 Once everything completed you will find config_var in your Heroku applications dashboard with connection string which you can use to connect from the Instance which created by this script or you can use this connection string to connect to private database from any resources from VPC created by this script.
 
-You can run following command to get the connection string
+You can run following command to get the connection string, It can take 5-15 minutes to provision.
 
 ```
 heroku config --app <APPLICATION_NAME> | grep DATABASE_ENDPOINT
