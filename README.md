@@ -55,7 +55,7 @@ Your privatelink endpoint is now operational.
 ```
 This command will take 10-15 minutes to complete.
 
-Make note of the Service Name.
+Make note of the <SERVICE_NAME>.
 
 Run following command (for the first time)
 
