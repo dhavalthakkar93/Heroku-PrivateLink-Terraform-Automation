@@ -8,6 +8,8 @@ Prerequisites
 - Heroku Private Space
 - AWS account
 
+Limitation - Currently it only works with `Virginia, United States` region of Heroku Private Space.
+
 First clone the code
 
 ```
