@@ -29,7 +29,7 @@ variable "key_path" {
 }
 
 variable "ec2_key_pair_name" {
-    description = "EC2 key pair name (.pem file name)"
+    description = "EC2 key pair name (.pem file name, Which you can find in your AWS EC2 dashboard under keypairs menu)"
 }
 
 variable "enpoint_name" {
