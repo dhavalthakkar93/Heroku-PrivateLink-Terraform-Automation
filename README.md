@@ -1,6 +1,13 @@
 # Heroku-PrivateLink-Terraform-Automation
 Magic of terraform and shell script to automate the process of provisioning Heroku PrivateLink which use to connect to a Private Heroku Postgres Database from an Amazon VPC.
 
+Prerequisites
+
+- Terraform (https://learn.hashicorp.com/terraform/getting-started/install.html)
+- Heroku CLI (https://devcenter.heroku.com/articles/heroku-cli)
+- Heroku Private Space
+- AWS account
+
 First clone the code
 
 ```
@@ -25,6 +32,14 @@ Creating heroku-postgresql:private-0 on ⬢ <APPLICATION_NAME>... $300/month
 This database will be created in a private space.
 The database should be available in 3-5 minutes.
 ```
+
+Export AWS credentials
+
+```
+export AWS_ACCESS_KEY_ID=<YOUR_AWS_ACCESS_KEY_ID>
+export AWS_SECRET_ACCESS_KEY=<YOUR_AWS_SECRET_ACCESS_KEY>
+```
+
 Run following command and supply following values to script when it prompts:
 
 - AWS_ACCOUNT_ID
