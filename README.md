@@ -33,7 +33,8 @@ Run following command and supply following values to script when it prompts:
 
 ```
 sh heroku-privatelink-setup.sh
-
+```
+```
 Creating privatelink endpoint... done
 
 Service Name: Provisioning
