@@ -10,13 +10,13 @@ Prerequisites
 
 Limitation - Currently it only works with `Virginia, United States` region of Heroku Private Space.
 
-First clone the code
+First clone the repository:
 
 ```
 git clone https://github.com/dhavalthakkar93/Heroku-Docker-Communication-POC
 ```
 
-Create Heroku Application (optional, if you already have application)
+Create Heroku Application (optional, if you already have application):
 
 ```
 heroku create -a <APPLICATION_NAME> --space <PRIVATE_SPACE_NAME>
@@ -25,7 +25,7 @@ Creating ⬢ <APPLICATION_NAME> in <PRIVATE_SPACE_NAME>... done
 http://<APPLICATION_NAME>.herokuapp.com/ | https://git.heroku.com/<APPLICATION_NAME>.git
 ```
 
-Provision Private Tier Heroku Postgres database to the application (optional, if you already provisioned database to the application)
+Provision Private Tier Heroku Postgres database to the application (optional, if you already provisioned database to the application):
 
 ```
 heroku addons:create heroku-postgresql:private-0 -a <APPLICATION_NAME>
@@ -35,7 +35,7 @@ This database will be created in a private space.
 The database should be available in 3-5 minutes.
 ```
 
-Export AWS credentials
+Export AWS credentials:
 
 ```
 export AWS_ACCESS_KEY_ID=<YOUR_AWS_ACCESS_KEY_ID>
