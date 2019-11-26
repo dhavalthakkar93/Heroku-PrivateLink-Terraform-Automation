@@ -106,7 +106,7 @@ terraform destroy
 
 #### SSH Tunnel
 
-We can setup SSH tunnel through EC2 instance (Must be in the same VPC) for local environment to access private database which configured with PrivateLink
+It is possible to setup SSH tunnel through EC2 instance (Must be in the same VPC) for local environment to access private database which configured with PrivateLink.
 
 You can run following command in your local machine to setup SSH tunnel:
 
