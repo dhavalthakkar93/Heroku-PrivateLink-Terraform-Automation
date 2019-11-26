@@ -102,3 +102,26 @@ To destroy the created AWS Infrastructure you can run following command:
 ```
 terraform destroy
 ```
+
+
+#### SSH Tunnel
+
+We can setup SSH tunnel through EC2 instance (Must be in the same VPC) for local environment to access private database which configured with PrivateLink
+
+You can run following command in your local machine to setup SSH tunnel:
+
+```
+ssh -f -i <AWS_EC2_INSTANCE_KEY> <EC2_USERNAME>@<EC2_PUBLIC_IP/<PUBLIC_DNS> -L <LOCAL_PORT>:<DATABASE_HOST>:5432 -N -v
+```
+
+You can get the **DATABASE_HOST** from Heroku config var use following command:
+
+```
+heroku config --app your_app_name | grep ENDPOINT_ID_HERE
+```
+
+Use following command to connect to your private database from local machine:
+
+```
+psql postgres://<DB_USER>:<DB_PASSWORD>@localhost:<LOCAL_PORT>/<DATABASE_NAME>
+```
